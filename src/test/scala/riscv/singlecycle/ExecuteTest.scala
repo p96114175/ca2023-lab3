@@ -32,7 +32,7 @@ class ExecuteTest extends AnyFlatSpec with ChiselScalatestTester {
         c.io.mem_alu_result.expect(result.U)
         c.io.if_jump_flag.expect(0.U)
       }
-
+      
       // beq test
       c.io.instruction.poke(0x00208163L.U) // pc + 2 if x1 === x2
       c.io.instruction_address.poke(2.U)
@@ -44,10 +44,10 @@ class ExecuteTest extends AnyFlatSpec with ChiselScalatestTester {
       // equ
       c.io.reg1_data.poke(9.U)
       c.io.reg2_data.poke(9.U)
-      c.clock.step()
       c.io.if_jump_flag.expect(1.U)
       c.io.if_jump_address.expect(4.U)
-
+      c.clock.step()
+      
       // not equ
       c.io.reg1_data.poke(9.U)
       c.io.reg2_data.poke(19.U)

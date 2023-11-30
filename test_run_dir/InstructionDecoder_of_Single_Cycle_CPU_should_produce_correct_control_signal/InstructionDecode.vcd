@@ -1,0 +1,122 @@
+$date
+2023-11-30T16:21+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module InstructionDecode $end
+ $var wire 5 ! rs2 $end
+ $var wire 5 " rs1 $end
+ $var wire 1 # io_memory_read_enable $end
+ $var wire 5 $ immediate_lo $end
+ $var wire 5 % io_regs_reg2_read_address $end
+ $var wire 1 & reset $end
+ $var wire 5 ' io_reg_write_address $end
+ $var wire 20 ( immediate_hi_hi_1 $end
+ $var wire 1 ) io_reg_write_enable $end
+ $var wire 32 * io_instruction $end
+ $var wire 21 + immediate_hi_hi $end
+ $var wire 1 , io_ex_aluop2_source $end
+ $var wire 1 - io_ex_aluop1_source $end
+ $var wire 21 . immediate_hi_2 $end
+ $var wire 27 / immediate_hi_1 $end
+ $var wire 7 0 opcode $end
+ $var wire 11 1 immediate_lo_1 $end
+ $var wire 1 2 clock $end
+ $var wire 5 3 io_regs_reg1_read_address $end
+ $var wire 1 4 io_memory_write_enable $end
+ $var wire 27 5 immediate_hi $end
+ $var wire 2 6 io_wb_reg_write_source $end
+ $var wire 32 7 immediate $end
+ $var wire 32 8 io_ex_immediate $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+b00000000000000000000000000000000 *
+b000000000000000000000 +
+02
+b00 6
+04
+b000000000000000000000 .
+b000000000000000000000000000 /
+b00000 !
+b00000 "
+b00000 %
+b00000 $
+b00000 '
+b00000000000000000000000000000000 7
+b00000000000 1
+b00000000000000000000000000000000 8
+b00000000000000000000 (
+b00000 3
+b0000000 0
+0#
+0&
+b000000000000000000000000000 5
+0)
+0,
+0-
+$end
+#0
+1&
+1,
+#1
+12
+#6
+b01010 !
+b00100 $
+b01010 %
+0&
+b00100 '
+b00000000000000000010 (
+b00000000101000000010001000100011 *
+b000000000000000000100 .
+b0100011 0
+b00000001010 1
+02
+14
+b00000000000000000000000000000100 7
+b00000000000000000000000000000100 8
+#11
+12
+#16
+b00000 !
+b00000 %
+b00101 '
+1)
+b00000000000000000010001010110111 *
+b000000000000000000001 +
+b000000000000000000001000000 /
+b0110111 0
+b00000000000 1
+02
+04
+b00000000000000000010000000000000 7
+b00000000000000000010000000000000 8
+#21
+12
+#26
+b00010 !
+b00001 "
+b00010 $
+b00010 %
+b00011 '
+b00000000000000001000 (
+b00000000001000001000000110110011 *
+0,
+b000000000000000010000 .
+b0110011 0
+b00000000010 1
+02
+b00001 3
+b00000000000000000000000000000010 7
+b00000000000000000000000000000010 8
+#31
+12
+#36
+02
+b00000000000000000000000000000000 *
